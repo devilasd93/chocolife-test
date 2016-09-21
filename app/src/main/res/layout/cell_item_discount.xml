@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRootCellDiscount"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.diss.chocolife_test.mvc.views.VH.RoundedCornerLayout
+
+        android:layout_width="110dp"
+        android:layout_height="110dp">
+        <ImageView
+            android:id="@+id/ivCellDiscountMainPhoto"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/tvCellDiscountEco"
+            android:text="-47%"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/ic_sale"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:background="@color/colorRedTransparentHalf"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:src="@drawable/icon_bought"
+                android:scaleType="fitCenter"
+                android:padding="4dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+            <TextView
+                android:id="@+id/tvCellDiscountBuyCount"
+                android:text="Купили:\n35675"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+        </LinearLayout>
+
+    </com.diss.chocolife_test.mvc.views.VH.RoundedCornerLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="0dp">
+        <TextView
+            android:id="@+id/tvCellDiscountTitle"
+            android:text="SPA-программы «Нега», «Гуаша» и «Шоколадное удовольствие» в Spa Sana"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="top"
+            android:minHeight="70dp"
+            android:textColor="@color/colorTextTitleGray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@drawable/ic_bg_price"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:id="@+id/tvCellDiscountOldPrice"
+                android:gravity="center"
+                android:textStyle=""
+                android:text="900 тг"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextTitleGray"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+            <TextView
+                android:id="@+id/tvCellDiscountNewPrice"
+                android:gravity="center"
+                android:text="900 тг"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
